@@ -14,7 +14,9 @@ Version 1.6.
  2. Meta-Label: This is a *secondary model* using ML algorithm on the trading strategy. (predict whether its bet is profit or loss/ correct bets of the trading strategy) /I used Random Forest here.
  3. Bet Sizing: This is a *sizing model* using predict probabilities of ML algorithm used in Meta-Labeling (decide how much to buy)
  4. Buy and hold: Buy-and-hold for an entire period.
+ 
  And those strategies were introduced in *Lopez de Prado*, **Advances in Financial Machine Learning**.
+ 
 ### BTC-USD (30 minutes data)
 
 ![BTCUSD Annualized Sharpe Ratio](https://user-images.githubusercontent.com/52461409/104087088-9b60f600-52a0-11eb-8647-d3426ddabd39.png)
