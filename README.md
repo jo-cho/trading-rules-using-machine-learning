@@ -1,4 +1,5 @@
-# trading-rules-using-machine-learning
+# Trading rules using machine learning by jojothepizza
+Version 1.6.
 
 This is my financial trading system using ML.
 
