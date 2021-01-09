@@ -7,7 +7,7 @@ Version 1.6.
 - I'm still working on this project. If you're interested, feel free to contact me.
 
 # Results
- - This is the results of my trading strategies (further explanations in *Notebooks*).
+ - This is the results of my trading strategies (there's full code in *Notebooks*).
  - The trading rule is based on Triple-Barrier Method introduced in Lopez De Prado (2018).
  - Here are Annualized Sharpe Ratio and Cumulative Returns of three strategies (only long strategy which excludes short selling):
  1. Trading Strategy: This is a *primary model* using only technical analysis. (predict when to buy)
