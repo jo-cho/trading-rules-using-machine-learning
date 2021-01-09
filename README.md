@@ -1,19 +1,20 @@
-# Trading rules using machine learning by jojothepizza
+# Trading rules using machine learning 
+## by jojothepizza
 Version 1.6.
 
-This is my financial trading system using ML.
+- This is my financial trading system using ML.
 
-I'm still working on this project. If you're interested, feel free to contact me.
+- I'm still working on this project. If you're interested, feel free to contact me.
 
 # Results
- This is the results of my trading strategies (further explanations in *Notebooks*).
- The trading rule is based on Triple-Barrier Method introduced in Lopez De Prado (2018).
- Here are Annualized Sharpe Ratio and Cumulative Returns of three strategies (only long strategy which excludes short selling):
+ - This is the results of my trading strategies (further explanations in *Notebooks*).
+ - The trading rule is based on Triple-Barrier Method introduced in Lopez De Prado (2018).
+ - Here are Annualized Sharpe Ratio and Cumulative Returns of three strategies (only long strategy which excludes short selling):
  1. Trading Strategy: This is a *primary model* using only technical analysis. (predict when to buy)
- 2. Meta-Label: This is a *secondary model* using ML algorithm on the trading strategy. (predict its bet is whether profit or loss/ correct the bets of the trading strategy) /I used Random Forest.
- 3. Bet Sizing: This is a betting model using predict probabilities of ML algorithm used in Meta-Labeling (decide how much to buy/ maximize Sharpe ratio/ manage risk)
- 
- * And those strategies were introduced in *Lopez de Prado*, **Advances in Financial Machine Learning**.
+ 2. Meta-Label: This is a *secondary model* using ML algorithm on the trading strategy. (predict whether its bet is profit or loss/ correct bets of the trading strategy) /I used Random Forest here.
+ 3. Bet Sizing: This is a *sizing model* using predict probabilities of ML algorithm used in Meta-Labeling (decide how much to buy)
+ 4. Buy and hold: Buy-and-hold for an entire period.
+ And those strategies were introduced in *Lopez de Prado*, **Advances in Financial Machine Learning**.
 ### BTC-USD (30 minutes data)
 
 ![BTCUSD Annualized Sharpe Ratio](https://user-images.githubusercontent.com/52461409/104087088-9b60f600-52a0-11eb-8647-d3426ddabd39.png)
