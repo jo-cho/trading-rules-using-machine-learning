@@ -11,12 +11,13 @@ Version 1.6.
  - The trading rule is based on Triple-Barrier Method introduced in Lopez De Prado (2018).
  - Here are Annualized Sharpe Ratio and Cumulative Returns of three strategies (only long strategy which excludes short selling):
  1. Trading Strategy: This is a *primary model* using only technical analysis. (predict when to buy)
- 2. Meta-Label: This is a *secondary model* using ML algorithm on the trading strategy. (predict whether its bet is profit or loss/ correct bets of the trading strategy) /I used Random Forest here.
+ 2. Meta-Label: This is a *secondary model* using ML algorithm on the trading strategy. (predict whether its bet is profit or loss/ correct bets of the trading strategy) /I used Random Forest and LSTM here.
  3. Bet Sizing: This is a *sizing model* using predict probabilities of ML algorithm used in Meta-Labeling (decide how much to buy)
  4. Buy and hold: Buy-and-hold for an entire period.
  
  And those strategies were introduced in *Lopez de Prado*, **Advances in Financial Machine Learning**.
  
+ ## With Random Forest
 ### BTC-USD (30 minutes data)
 ![BTCUSD Annualized Sharpe Ratio](https://user-images.githubusercontent.com/52461409/104087088-9b60f600-52a0-11eb-8647-d3426ddabd39.png)
 ![BTCUSD cumret](https://user-images.githubusercontent.com/52461409/104087089-9c922300-52a0-11eb-979b-d9c2ad10999d.jpg)
@@ -41,4 +42,15 @@ Version 1.6.
 ![네이버 Annualized Sharpe Ratio](https://user-images.githubusercontent.com/52461409/104093508-49cf6000-52ce-11eb-8e01-9365a1529d3c.png)
 ![네이버 cumret](https://user-images.githubusercontent.com/52461409/104093510-4b008d00-52ce-11eb-84c2-426179f75a7a.jpg)
 
-Huge thanks to Lopez de Prado and a python libary *mlfinlab*
+## With LSTM
+
+### BTC-USD (30 minutes data)
+![BTCUSD LSTM Annualized Sharpe Ratio](https://user-images.githubusercontent.com/52461409/104122594-4b119300-5389-11eb-9811-85b725295367.png)
+![BTCUSD LSTM cumret](https://user-images.githubusercontent.com/52461409/104122589-4947cf80-5389-11eb-93c4-f754367d6905.jpg)
+
+### Samsung Electronics (Daily data)
+![SE LSTM Annualized Sharpe Ratio](https://user-images.githubusercontent.com/52461409/104122591-4a78fc80-5389-11eb-8673-ed6254e9a1ac.png)
+![SE LSTM Cumret](https://user-images.githubusercontent.com/52461409/104122592-4a78fc80-5389-11eb-8761-33c07c949286.jpg)
+
+
+- References: Lopez de Prado (2018) and a python libary *mlfinlab*
