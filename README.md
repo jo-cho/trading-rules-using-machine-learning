@@ -12,6 +12,33 @@ Version 1.6, 1.7
  - The trading rule is based on Triple-Barrier Method introduced in Lopez De Prado (2018).
 
 ## Data
+![close_price](https://user-images.githubusercontent.com/52461409/104313915-11bd5c80-551c-11eb-9f23-f8fa73e88ddf.jpg)
+
+## First model (getting trend signals and choose long entries)
+### SMA 
+- long when 10-days-SMA > 30-days-SMA
+![smaf](https://user-images.githubusercontent.com/52461409/104313942-17b33d80-551c-11eb-9238-005598758f1f.jpg)
+### Force Index
+- long when FI>0
+![fi_f](https://user-images.githubusercontent.com/52461409/104313940-171aa700-551c-11eb-856a-e16b03f5753c.jpg)
+### RSI
+- long when RSI>50
+![rsi_f](https://user-images.githubusercontent.com/52461409/104313939-171aa700-551c-11eb-9d69-ddfcc205e603.jpg)
+
+###
+![cusum](https://user-images.githubusercontent.com/52461409/104313937-16821080-551c-11eb-8eb6-23aab2801d54.jpg)
+![entries](https://user-images.githubusercontent.com/52461409/104313935-16821080-551c-11eb-8e10-d7f3df7ed431.jpg)
+
+![cumret](https://user-images.githubusercontent.com/52461409/104313918-12ee8980-551c-11eb-916a-34c506afa1bf.jpg)
+![betsize](https://user-images.githubusercontent.com/52461409/104313920-13872000-551c-11eb-9422-ceee79ed5c54.jpg)
+![Prob](https://user-images.githubusercontent.com/52461409/104313923-13872000-551c-11eb-856b-ea5d09e924cf.jpg)
+![betpred](https://user-images.githubusercontent.com/52461409/104313924-141fb680-551c-11eb-86c5-549b9be60690.jpg)
+![cvroc](https://user-images.githubusercontent.com/52461409/104313925-141fb680-551c-11eb-9a0e-e9dcfb0b1852.jpg)
+![pcacorr](https://user-images.githubusercontent.com/52461409/104313926-14b84d00-551c-11eb-9daa-be3ce324a086.jpg)
+![metalabel](https://user-images.githubusercontent.com/52461409/104313928-14b84d00-551c-11eb-8ed5-813fa22ab71d.jpg)
+![cm2](https://user-images.githubusercontent.com/52461409/104313929-1550e380-551c-11eb-96f1-7414d31ae4fa.jpg)
+![cm1](https://user-images.githubusercontent.com/52461409/104313931-15e97a00-551c-11eb-9c1d-6889094fd8bc.jpg)
+![return_of_1stmodel](https://user-images.githubusercontent.com/52461409/104313933-15e97a00-551c-11eb-9d41-8cb171c73ce5.jpg)
 
  
 
