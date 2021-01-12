@@ -31,13 +31,12 @@ Version 1.6, 1.7
 - filter out entry points
 ![cusum](https://user-images.githubusercontent.com/52461409/104313937-16821080-551c-11eb-8eb6-23aab2801d54.jpg)
 
-![return_of_1stmodel](https://user-images.githubusercontent.com/52461409/104313933-15e97a00-551c-11eb-9d41-8cb171c73ce5.jpg)
 ### Combined filter
 ![entries](https://user-images.githubusercontent.com/52461409/104313935-16821080-551c-11eb-8e10-d7f3df7ed431.jpg)
 
 ## First model 2 (set up target rates of each position and exit of it)
 - Triple-Barrier method
-#### Results of first model
+#### Results of the first model
 ![return_of_1stmodel](https://user-images.githubusercontent.com/52461409/104313933-15e97a00-551c-11eb-9d41-8cb171c73ce5.jpg)
 ![cm1](https://user-images.githubusercontent.com/52461409/104313931-15e97a00-551c-11eb-9c1d-6889094fd8bc.jpg)
 ![metalabel](https://user-images.githubusercontent.com/52461409/104313928-14b84d00-551c-11eb-8ed5-813fa22ab71d.jpg)
@@ -114,5 +113,5 @@ Version 1.6, 1.7
 
 
 # References: 
-- Lopez de Prado (2018) and a python libary *mlfinlab*
+- Advances in Financial Machine Learning, Lopez de Prado (2018) and a python libary *mlfinlab*, *ta*
 
