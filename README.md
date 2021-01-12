@@ -50,8 +50,8 @@ Version 1.6, 1.7
 - Use MinMaxizer scaler and PCA
 ![pcacorr](https://user-images.githubusercontent.com/52461409/104313926-14b84d00-551c-11eb-9daa-be3ce324a086.jpg)
 
-### Random Forest
-### Results of second model
+
+### Results of second model (Random forest classification)
 ![cm2](https://user-images.githubusercontent.com/52461409/104313929-1550e380-551c-11eb-96f1-7414d31ae4fa.jpg)
 ![cvroc](https://user-images.githubusercontent.com/52461409/104313925-141fb680-551c-11eb-9a0e-e9dcfb0b1852.jpg)
 ![betpred](https://user-images.githubusercontent.com/52461409/104313924-141fb680-551c-11eb-86c5-549b9be60690.jpg)
@@ -113,5 +113,7 @@ Version 1.6, 1.7
 
 
 # References: 
-- Advances in Financial Machine Learning, Lopez de Prado (2018) and a python libary *mlfinlab*, *ta*
+- Advances in Financial Machine Learning, Lopez de Prado (2018)
+- *mlfinlab*, https://github.com/hudson-and-thames/mlfinlab
+- *ta*, https://github.com/bukosabino/ta
 
