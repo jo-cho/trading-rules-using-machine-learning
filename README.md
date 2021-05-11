@@ -1,10 +1,14 @@
 # Trading rules using machine learning 
 ## by jojothepizza
-Version 1.6, 1.7
+Version 1.6, 
 
 - This is my financial trading system using ML.
 
 - I'm still working on this project. If you're interested, feel free to contact me.
+
+- *I recommend this new repository* Second Strategy[https://github.com/jo-cho/Second_Strategy]
+
+- I found some errors in backtesting in this notebooks. Nvm the results.
 
 # Experiments
 
