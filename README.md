@@ -6,7 +6,7 @@ Version 1.6,
 
 - I'm still working on this project. If you're interested, feel free to contact me.
 
-- *I recommend this new repository* Second Strategy[https://github.com/jo-cho/Second_Strategy]
+- *I recommend this new repository* : [Second Strategy](https://github.com/jo-cho/Second_Strategy)
 
 - I found some errors in backtesting in this notebooks. Nvm the results.
 
