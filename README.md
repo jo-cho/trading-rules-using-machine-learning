@@ -5,19 +5,50 @@
 
 - I'm still working on this project. If you're interested, feel free to contact me.
 
-- **I strongly recommend this new repository** : [Second Strategy](https://github.com/jo-cho/Second_Strategy)
+# High-Frequency (Cypto price) trading rules using Machine Learning
 
-- I found some errors in backtesting in this notebooks. Nvm the results.
+Version 2.0
 
-# Experiments
+Momentum strategy + Meta-Labeling
+
+1. Financial Data and Bars
+- OHLCV Bar
+- Summary and plot
+
+2. Getting Trend Signals (Long only)
+- RSI with different windows
+
+3.Labeling with Triple-Barrier Method
+- Form Symmetric Triple Barrier with signals
+- Binary Labeling (Profit or Loss)
+
+4. Secondary Model
+
+4.1. Features (X)
+
+- Market/ Microstructure features/ Fundamentals/ Sentiments/
+- Feature Scaling (MinMaxScaler)
+- Feature Engineering (PCA/ Autoencoder)
+
+4.2. Prediction Model
+- Simple Split
+- AutoML with autogluon and select the best model
+- Results
+4.3. Trading
+- Bet Sizing
+ 
+5. Results
+- Cumulative returns, Sharpe Ratio, Drawdown
+
+# Results
 
  - This is the results of my trading strategies (there's full code in *Notebooks*).
  - The trading rule is based on Triple-Barrier Method introduced in Lopez De Prado (2018).
 
 ## Data
-- BTC-USD (30 minutes data)
-![close_price](https://user-images.githubusercontent.com/52461409/104313915-11bd5c80-551c-11eb-9f23-f8fa73e88ddf.jpg)
+- ETC-USD (5 minutes data)
 
+!!! editing
 ## First model 1 (get trend signals and position entries)
 ### SMA 
 - long when 10-days-SMA > 30-days-SMA
