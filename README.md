@@ -9,9 +9,10 @@ Version 2.0
 
 Momentum strategy + Meta-Labeling
 
-1. Financial Data and Bars
-    - OHLCV Bar
-    - Summary and plot
+1. [Financial Data and Bars](#financial-data-and-bars)
+
+    - [OHLCV Bars](#ohlcv-bars)
+    - [Summary and plot](#summary-and-plot)
 
 2. Getting Trend Signals (Long only)
     - RSI with different windows
@@ -39,13 +40,15 @@ Momentum strategy + Meta-Labeling
 5. Results
     - Cumulative returns, Sharpe Ratio, Drawdown
 
-# Results
+## Financial Data and Bars
 
  - This is the results of my trading strategies (there's full code in *Notebooks*).
  - The trading rule is based on Triple-Barrier Method introduced in Lopez De Prado (2018).
 
-## Data
+### OHLCV Bars
 - ETC-USD (5 minutes data)
+- 
+### Summary and plot
 
 !!! editing
 ## First model 1 (get trend signals and position entries)
