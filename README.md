@@ -3,7 +3,7 @@
 
 - This is my financial trading system using ML.
 
-- See [Notebook](Notebooks/ETCUSD-trading-ML.ipynb)
+- See [Notebook](https://github.com/jo-cho/trading-rules-using-machine-learning/blob/main/Notebooks/ETCUSD%20trading%20ML.ipynb)
 
 - I'm still working on this project. If you're interested, feel free to contact me.
 
