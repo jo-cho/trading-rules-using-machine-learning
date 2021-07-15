@@ -8,49 +8,6 @@ import pandas as pd
 import numpy as np
 import ta
 
-def feature_generator(stock, w1=50,w2=14,w3=20,w4=14,dropna=True):
-    close = stock.Close;volume = stock.Volume;high = stock.High
-    low = stock.Low;open = stock.Open
-    bbp = ta.volatility.bollinger_pband(close,w1)
-    wr = ta.momentum.williams_r(high,low,close,w2)
-    cci = ta.trend.cci(high,low,close,w3)
-    rsi = ta.momentum.rsi(close,w4)
-    temp_X = pd.DataFrame([bbp,wr,cci,rsi]).T
-    if dropna is False:
-        out = temp_X
-    else:
-        out = temp_X.dropna()
-    #out = out.reset_index()
-    return out
-
-def get_labels_peak_trough(price, period=11, drop_hold = False):
-    """
-    price : pd.Series
-    """
-
-    close = price
-    
-    lag = (period) / 2 if period % 2==0 else (period+1)/2 
-    lag = int(lag)
-    
-    tmp = pd.DataFrame()
-    tmp['close'] = close
-    tmp['min_11'] = close.rolling(lag).min()
-    tmp['fmin_11'] = close.shift(-lag).rolling(lag).min()
-    tmp['max_11'] = close.rolling(lag).max()
-    tmp['fmax_11'] = close.shift(-lag).rolling(lag).max()
-    tmp = tmp.dropna()
-
-    idx1= (tmp.close==tmp.min_11) & (tmp.min_11<=tmp.fmin_11)  # buy=1
-    idx2 = (tmp.close==tmp.max_11) & (tmp.max_11>=tmp.fmax_11) # sell=-1
-    idx3 = (~idx1)&(~idx2) # hold=0
-#    print(np.sum(idx1)/len(tmp), np.sum(idx2)/len(tmp))
-    idx = (idx1 * 1 + idx2*-1 + idx3*0).to_frame()
-    idx.columns =['position']
-    if drop_hold is True:
-        idx = idx[idx.position!=0]
-
-    return idx.position
 def get_rsi(close,window=20):
     rsi = ta.momentum.rsi(close,window)
     return rsi
