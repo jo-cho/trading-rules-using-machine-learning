@@ -12,33 +12,34 @@ Version 2.0
 Momentum strategy + Meta-Labeling
 
 1. Financial Data and Bars
-- OHLCV Bar
-- Summary and plot
+    - OHLCV Bar
+    - Summary and plot
 
 2. Getting Trend Signals (Long only)
-- RSI with different windows
+    - RSI with different windows
 
-3.Labeling with Triple-Barrier Method
-- Form Symmetric Triple Barrier with signals
-- Binary Labeling (Profit or Loss)
+3. Labeling with Triple-Barrier Method
+    - Form Symmetric Triple Barrier with signals
+    - Binary Labeling (Profit or Loss)
+
 
 4. Secondary Model
 
 4.1. Features (X)
-
-- Market/ Microstructure features/ Fundamentals/ Sentiments/
-- Feature Scaling (MinMaxScaler)
-- Feature Engineering (PCA/ Autoencoder)
-
+    - Market/ Microstructure features/ Fundamentals/ Sentiments/
+    - Feature Scaling (MinMaxScaler)
+    - Feature Engineering (PCA/ Autoencoder)
+    
 4.2. Prediction Model
-- Simple Split
-- AutoML with autogluon and select the best model
-- Results
+    - Simple Split
+    - AutoML with autogluon and select the best model
+    - Results
+    
 4.3. Trading
-- Bet Sizing
+    - Bet Sizing
  
 5. Results
-- Cumulative returns, Sharpe Ratio, Drawdown
+    - Cumulative returns, Sharpe Ratio, Drawdown
 
 # Results
 
