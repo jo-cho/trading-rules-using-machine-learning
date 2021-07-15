@@ -1,11 +1,9 @@
-# Trading rules using machine learning 
+# High-Frequency Trading rules using machine learning 
 
 
 - This is my financial trading system using ML.
 
 - I'm still working on this project. If you're interested, feel free to contact me.
-
-# High-Frequency (Cypto price) trading rules using Machine Learning
 
 Version 2.0
 
@@ -25,17 +23,17 @@ Momentum strategy + Meta-Labeling
 
 4. Secondary Model
 
-4.1. Features (X)
+- Features (X)
     - Market/ Microstructure features/ Fundamentals/ Sentiments/
     - Feature Scaling (MinMaxScaler)
     - Feature Engineering (PCA/ Autoencoder)
     
-4.2. Prediction Model
+- Prediction Model
     - Simple Split
     - AutoML with autogluon and select the best model
     - Results
     
-4.3. Trading
+- Trading
     - Bet Sizing
  
 5. Results
@@ -80,13 +78,14 @@ Momentum strategy + Meta-Labeling
 ## Second model
 - It is a model that predicts whether the outcome of each bet is profit or loss.
 - It corrects bets of the first trading strategy.
+- 
 ### Features
 - Technical indicators and price history
 - Use MinMaxizer scaler and PCA
 ![pcacorr](https://user-images.githubusercontent.com/52461409/104313926-14b84d00-551c-11eb-9daa-be3ce324a086.jpg)
 
 
-### Results of second model (Random forest classification)
+### 
 ![cm2](https://user-images.githubusercontent.com/52461409/104313929-1550e380-551c-11eb-96f1-7414d31ae4fa.jpg)
 ![cvroc](https://user-images.githubusercontent.com/52461409/104313925-141fb680-551c-11eb-9a0e-e9dcfb0b1852.jpg)
 ![betpred](https://user-images.githubusercontent.com/52461409/104313924-141fb680-551c-11eb-86c5-549b9be60690.jpg)
@@ -115,40 +114,9 @@ Momentum strategy + Meta-Labeling
 
 
 
-# Other assets results 
-### Samsung Electronics (Daily data)
-![SE Annualized Sharpe Ratio](https://user-images.githubusercontent.com/52461409/104087185-3a85ed80-52a1-11eb-8a56-6ed015e78327.png)
-![SE cumret](https://user-images.githubusercontent.com/52461409/104087186-3b1e8400-52a1-11eb-9220-c48857479baa.jpg)
-
-### SK Hynix (Daily data)
-![SK하이닉스 Annualized Sharpe Ratio](https://user-images.githubusercontent.com/52461409/104093517-4cca5080-52ce-11eb-9b10-17220d3b430c.png)
-![SK하이닉스 cumret](https://user-images.githubusercontent.com/52461409/104093518-4cca5080-52ce-11eb-8662-74bfa3550dc1.jpg)
-
-### LG Chemicals (Daily data)
-![LG화학 Annualized Sharpe Ratio](https://user-images.githubusercontent.com/52461409/104093513-4c31ba00-52ce-11eb-8ea2-27f90df14e2b.png)
-![LG화학 cumret](https://user-images.githubusercontent.com/52461409/104093515-4c31ba00-52ce-11eb-8987-7828f92d2484.jpg)
-
-### Hyundai Cars (Daily data)
-![현대차 Annualized Sharpe Ratio](https://user-images.githubusercontent.com/52461409/104093511-4b992380-52ce-11eb-94e0-ff0ee820cc45.png)
-![현대차 cumret](https://user-images.githubusercontent.com/52461409/104093512-4b992380-52ce-11eb-897d-1d1f26087767.jpg)
-
-### Naver (Daily data)
-![네이버 Annualized Sharpe Ratio](https://user-images.githubusercontent.com/52461409/104093508-49cf6000-52ce-11eb-8e01-9365a1529d3c.png)
-![네이버 cumret](https://user-images.githubusercontent.com/52461409/104093510-4b008d00-52ce-11eb-84c2-426179f75a7a.jpg)
-
-# With LSTM
-
-### BTC-USD (30 minutes data)
-![BTCUSD LSTM Annualized Sharpe Ratio](https://user-images.githubusercontent.com/52461409/104122594-4b119300-5389-11eb-9811-85b725295367.png)
-![BTCUSD LSTM cumret](https://user-images.githubusercontent.com/52461409/104122589-4947cf80-5389-11eb-93c4-f754367d6905.jpg)
-
-### Samsung Electronics (Daily data)
-![SE LSTM Annualized Sharpe Ratio](https://user-images.githubusercontent.com/52461409/104122591-4a78fc80-5389-11eb-8673-ed6254e9a1ac.png)
-![SE LSTM Cumret](https://user-images.githubusercontent.com/52461409/104122592-4a78fc80-5389-11eb-8761-33c07c949286.jpg)
 
 
 # References: 
 - Advances in Financial Machine Learning, Lopez de Prado (2018)
-- *mlfinlab*, https://github.com/hudson-and-thames/mlfinlab
 - *ta*, https://github.com/bukosabino/ta
 
