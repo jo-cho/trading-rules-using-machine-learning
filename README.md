@@ -17,7 +17,7 @@ Momentum strategy + Meta-Labeling
     - [Summary and plot](#summary-and-plot)
 
 2. Getting Trend Signals (Long only)
-    - RSI with different windows
+    -
 
 3. Labeling with Triple-Barrier Method
     - Form Symmetric Triple Barrier with signals
@@ -44,13 +44,8 @@ Momentum strategy + Meta-Labeling
 
 ## Financial Data and Bars
 
- - This is the results of my trading strategies (there's full code in *Notebooks*).
+ - ETH/USD 5 min data (2019.1.1 ~ now)
  - The trading rule is based on Triple-Barrier Method introduced in Lopez De Prado (2018).
-
-### OHLCV Bars
-- ETC-USD (5 minutes data)
-- 
-### Summary and plot
 
 
 # References: 
