@@ -3,7 +3,7 @@
 
 - This is my financial trading system using ML.
 
-- See [Notebook](https://github.com/jo-cho/trading-rules-using-machine-learning/blob/main/Notebooks/ETCUSD%20trading%20ML.ipynb)
+- See [Notebook](https://github.com/jo-cho/trading-rules-using-machine-learning/blob/main/Notebooks/ETHUSD%20trading%20ML.ipynb)
 
 - I'm still working on this project. If you're interested, feel free to contact me.
 
@@ -13,34 +13,42 @@ Momentum strategy + Meta-Labeling
 
 1. [Financial Data and Bars](#financial-data-and-bars)
 
-    - [OHLCV Bars](#ohlcv-bars)
+    - [OHLCV Bars+ Buy volume](#ohlcv-bars)
     - [Summary and plot](#summary-and-plot)
 
-2. Getting Trend Signals (Long only)
-    -
+2. Getting Signals
+    - Momentum strategy (RSI..)
 
 3. Labeling with Triple-Barrier Method
     - Form Symmetric Triple Barrier with signals
     - Binary Labeling (Profit or Loss)
 
 
-4. Secondary Model
+4. Prediction Model
 
-- Features (X)
-    - Market/ Microstructure features/ Fundamentals/ Sentiments/
+- Get Features (X)
+
+    - Market data & Technical analysis
+    - *Microstructure features*
+    - *Fundamentals*
+    - *Sentiments with NLP*
+
+- Feature Engineering
     - Feature Scaling (MinMaxScaler)
-    - Feature Engineering (PCA/ Autoencoder)
+    - Dimension Reduction (PCA/ Non-Linear Autoencoder)
     
-- Prediction Model
-    - Simple Split
+- Machine Learning Model
+    - Hyperparameter tuning
     - AutoML with autogluon and select the best model
-    - Results
+    - Feature Importance
+    - Results with PnL
     
-- Trading
+4. Trading
     - Bet Sizing
- 
+    - *Trading Simulation*
+    - 
 5. Results
-    - Cumulative returns, Sharpe Ratio, Drawdown
+    - *Cumulative returns, Sharpe Ratio, Drawdown*
 
 ## Financial Data and Bars
 
@@ -51,4 +59,5 @@ Momentum strategy + Meta-Labeling
 # References: 
 - Advances in Financial Machine Learning, Lopez de Prado (2018)
 - *ta*, https://github.com/bukosabino/ta
+- *autogluon*, https://github.com/awslabs/autogluon
 
