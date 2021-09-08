@@ -5,7 +5,7 @@
 
 - See [Notebook](https://github.com/jo-cho/trading-rules-using-machine-learning/blob/main/Notebooks/ETHUSD%20trading%20ML.ipynb)
 
-- I'm still working on this project. If you're interested, feel free to contact me.
+- I'm still working on this project.
 
 Version 2.0
 
@@ -61,3 +61,5 @@ Momentum strategy + Meta-Labeling
 - *ta*, https://github.com/bukosabino/ta
 - *autogluon*, https://github.com/awslabs/autogluon
 
+# Dirty Flowchart
+![ML Trade Networks](https://user-images.githubusercontent.com/52461409/132567663-eeead1ab-d3de-4cf3-a79f-6fea94722999.png)
