@@ -9,46 +9,50 @@
 
 Version 2.0
 
-Momentum strategy + Meta-Labeling
+Momentum strategy with machine learning
 
 1. [Financial Data and Bars](#financial-data-and-bars)
 
-    - [OHLCV Bars+ Buy volume](#ohlcv-bars)
-    - [Summary and plot](#summary-and-plot)
+    - Form time/dollar bars with tick data
 
-2. Getting Signals
+2. Getting Trading Signals
     - Momentum strategy (RSI..)
+    - Additional ML regime detector
 
-3. Labeling with Triple-Barrier Method
-    - Form Symmetric Triple Barrier with signals
+3. Trading Rules
+    - Enter rules with trading signals
+    - Exit rules (triple-barrier method)
     - Binary Labeling (Profit or Loss)
 
 
-4. Prediction Model
+4. Strategy Enhancing ML Model
 
 - Get Features (X)
 
     - Market data & Technical analysis
     - *Microstructure features*
+    - *Macroeconomic variables*
     - *Fundamentals*
-    - *Sentiments with NLP*
+    - *public sentiments with NLP*
 
 - Feature Engineering
-    - Feature Scaling (MinMaxScaler)
-    - Dimension Reduction (PCA/ Non-Linear Autoencoder)
+    - Feature scaling
+    - Dimension reduction
+    - Feature Analysis with feature importance
+    - Feature selection
     
 - Machine Learning Model
+    - Cross-validation (time-series cv / Purged k-fold)  
     - Hyperparameter tuning
     - AutoML with autogluon and select the best model
-    - Feature Importance
-    - Results with PnL
+    - Results (accuracy, f1 score, roc-auc)
     
 4. Trading
     - Bet Sizing
     - *Trading Simulation*
     - 
 5. Results
-    - *Cumulative returns, Sharpe Ratio, Drawdown*
+    - *Cumulative returns, Sharpe Ratio, max drawdown*
 
 ## Financial Data and Bars
 
