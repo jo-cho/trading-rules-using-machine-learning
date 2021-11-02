@@ -61,5 +61,5 @@ Momentum strategy + Meta-Labeling
 - *ta*, https://github.com/bukosabino/ta
 - *autogluon*, https://github.com/awslabs/autogluon
 
-# Dirty Flowchart
+# Flowchart
 ![ML Trade Networks](https://user-images.githubusercontent.com/52461409/132567663-eeead1ab-d3de-4cf3-a79f-6fea94722999.png)
