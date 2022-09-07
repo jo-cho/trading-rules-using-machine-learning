@@ -5,7 +5,6 @@
 
 - See [Notebook](https://github.com/jo-cho/trading-rules-using-machine-learning/blob/main/Notebooks/ETHUSD%20trading%20ML.ipynb)
 
-- I'm still working on this project.
 
 Version 2.0
 
