@@ -1,4 +1,4 @@
-# High-Frequency Trading rules using machine learning 
+# Trading rules using machine learning 
 
 
 - This is my financial trading system using ML.
