@@ -4,9 +4,8 @@
 - This is my financial trading system using ML.
 
 - See [Notebook](https://github.com/jo-cho/trading-rules-using-machine-learning/blob/main/Notebooks/ETHUSD%20trading%20ML.ipynb)
+- The other example using daily stocks: [Project](https://github.com/jo-cho/trading-rules-using-machine-learning/tree/main/Notebooks/project)
 
-
-Version 2.0
 
 Momentum strategy with machine learning
 
