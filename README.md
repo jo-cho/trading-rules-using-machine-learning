@@ -1,67 +1,58 @@
 # Trading rules using machine learning 
+This is my financial trading using ML.
 
 
-- This is my financial trading system using ML.
-
-- See [Notebook](https://github.com/jo-cho/trading-rules-using-machine-learning/blob/main/Notebooks/ETHUSD%20trading%20ML.ipynb)
-- The other example using daily stocks: [Project](https://github.com/jo-cho/trading-rules-using-machine-learning/tree/main/Notebooks/project)
+- [Example](https://github.com/jo-cho/trading-rules-using-machine-learning/blob/main/Notebooks/ETHUSD%20trading%20ML.ipynb)
+- [Project](https://github.com/jo-cho/trading-rules-using-machine-learning/tree/main/Notebooks/project)
 
 
-Momentum strategy with machine learning
+Momentum prediction and enhancing the strategy with machine learning
 
-1. [Financial Data and Bars](#financial-data-and-bars)
-
+1. Financial Data and Bars
     - Form time/dollar bars with tick data
 
-2. Getting Trading Signals
+2. Get Buy/Sell Signals
     - Momentum strategy (RSI..)
     - Additional ML regime detector
 
 3. Trading Rules
-    - Enter rules with trading signals
-    - Exit rules (triple-barrier method)
-    - Binary Labeling (Profit or Loss)
+    - Set enter rules with trading signals from classifiers
+    - Set exit rules with profit-taking, stop-loss rate, and maximum holding period
+    - (For enhancing the strategy) Label the binary outcome (Profit or Loss)
 
 
-4. Strategy Enhancing ML Model
+4. Strategy-Enhancing ML Model
 
 - Get Features (X)
 
     - Market data & Technical analysis
-    - *Microstructure features*
-    - *Macroeconomic variables*
-    - *Fundamentals*
-    - *public sentiments with NLP*
+    - Microstructure features
+    - Macroeconomic variables
+    - Fundamentals
+    - *news/public sentiments* (in progress)
 
 - Feature Engineering
-    - Feature scaling
-    - Dimension reduction
-    - Feature Analysis with feature importance
-    - Feature selection
+    - Feature selection, dimension reduction
     
-- Machine Learning Model
+- Machine Learning Model Optmization
     - Cross-validation (time-series cv / Purged k-fold)  
     - Hyperparameter tuning
-    - AutoML with autogluon and select the best model
-    - Results (accuracy, f1 score, roc-auc)
+    - AutoML with autogluon (or simply using ensemble methods such as Random forest, LightGBM, or XGBoost)
+    - Metrics (accuracy, f1 score, roc-auc)
     
-4. Trading
-    - Bet Sizing
-    - *Trading Simulation*
-    - 
-5. Results
-    - *Cumulative returns, Sharpe Ratio, max drawdown*
-
-## Financial Data and Bars
-
- - ETH/USD 5 min data (2019.1.1 ~ now)
- - The trading rule is based on Triple-Barrier Method introduced in Lopez De Prado (2018).
+- Outcome
+    - Bet confidence (probability to accept a single trading signal)
+    
+4. Trading Decision
+    - Decide to bet or pass for each trading signal from the momentum strategy. The ML model above will help you.
+    - Bet sizing with some advanced models (in progress)
+    
+5. Backtesting
+    - Cumulative returns, Sharpe ratio, max drawdown, win ratio
 
 
 # References: 
 - Advances in Financial Machine Learning, Lopez de Prado (2018)
-- *ta*, https://github.com/bukosabino/ta
-- *autogluon*, https://github.com/awslabs/autogluon
 
 # Flowchart
 ![ML Trade Networks](https://user-images.githubusercontent.com/52461409/132567663-eeead1ab-d3de-4cf3-a79f-6fea94722999.png)
